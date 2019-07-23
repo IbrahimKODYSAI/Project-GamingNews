@@ -1,5 +1,6 @@
 // == Import : npm
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Menu,
   Segment,
@@ -34,17 +35,21 @@ class Header extends Component {
     return (
       <div className="header">
         <div className="container-head">
-          <h1><img className="logo" src="src/Assets/img/logo.jpg"></img>Game news</h1>
+          <Link to="/" exact><h1><img className="logo" src="src/Assets/img/logo.jpg"></img>Game news</h1></Link>
           <div className="container-head-right">
             <div className="log">
-              <Button className="lg" primary>Sign up</Button>
-              <Button
-                className="lg"
+              <Link
+                to="/Sign_Up"
+                exact
+              >
+                <Button className="lg" primary>Sign Up</Button>
+              </Link>
+              <Link
                 to="/login"
                 exact
               >
-                Log-in
-              </Button>
+                <Button className="lg">Login</Button>
+              </Link>
             </div>
           </div>
         </div>
