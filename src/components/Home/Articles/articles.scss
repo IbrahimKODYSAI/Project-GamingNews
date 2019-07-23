@@ -1,0 +1,23 @@
+#articles {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+#cards {
+  margin-bottom: 50px;
+  box-shadow: 15px 10px 5px lightgrey;
+}
+
+#cards:hover {
+  z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.15);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.15);
+    transition: all 200ms ease-in;
+    transform: scale(1.15);
+}
